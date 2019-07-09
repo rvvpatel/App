@@ -9,7 +9,7 @@ pipeline {
         stage('Build for dev') {
             when {
                 expression {
-                    return GIT_BRANCH == 'origin/dev'
+                    return GIT_BRANCH == 'origin/master'
                 }
             }
             steps {
